@@ -1,0 +1,131 @@
+body {
+    background: linear-gradient(135deg, #8ff5df, #9279f7);
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#weather-container {
+    background: rgba(255, 255, 255, 0.1);
+    max-width: 400px;
+    padding: 25px 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(15px);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+    color: #fff;
+}
+
+h2, label, p {
+    color: #f0f0f0;
+    margin: 10px 0;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+input {
+    width: calc(100% - 16px);
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    border: none;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    font-size: 16px;
+    margin-top: 20px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+button {
+    background: linear-gradient(135deg, #4a45e5, #5D5DBE);
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 120px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #5754D9, #7070D1);
+    transform: scale(1.05);
+}
+
+#temp-div p {
+    font-size: 60px;
+    margin-top: -20px;
+    font-weight: bold;
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+#weather-info {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+#weather-icon {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 15px;
+    display: none;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+}
+
+#hourly-forecast {
+    margin-top: 30px;
+    overflow-x: auto;
+    white-space: nowrap;
+    display: flex;
+    justify-content: flex-start;
+    padding-bottom: 10px;
+    scrollbar-width: thin;
+    scrollbar-color: #5D5DBE rgba(255, 255, 255, 0.2);
+}
+
+#hourly-forecast::-webkit-scrollbar {
+    height: 8px;
+}
+
+#hourly-forecast::-webkit-scrollbar-thumb {
+    background: #5D5DBE;
+    border-radius: 8px;
+}
+
+.hourly-item {
+    flex: 0 0 auto;
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 15px;
+    color: white;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hourly-item img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 5px;
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.2));
+}
+
+#hourly-heading {
+    color: #f0f0f0;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
